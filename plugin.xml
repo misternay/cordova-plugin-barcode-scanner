@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <plugin id="com.misternay.ja" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>BarcodeScannerNew</name>
-
+    
     <js-module name="BarcodeScannerNew" src="www/BarcodeScannerNew.js">
         <clobbers target="barcodescannernew" />
     </js-module>
-
+    
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="BarcodeScannerNew">
                 <param name="ios-package" value="BarcodeScannerNew" />
             </feature>
         </config-file>
-        <framework custom="true" src="src/ios/BarcodeScanner.framework" />
+        <framework src="BarcodeScanner" type="podspec" spec="~> 1.0.0" />
+        <!-- <framework custom="true" src="src/ios/BarcodeScanner.framework" /> -->
         <source-file src="src/ios/BarcodeScannerNew.swift" />
     </platform>
-
+    
 </plugin>
