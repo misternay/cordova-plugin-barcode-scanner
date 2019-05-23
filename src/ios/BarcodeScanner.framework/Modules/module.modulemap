@@ -1,0 +1,11 @@
+framework module BarcodeScanner {
+  umbrella header "BarcodeScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module BarcodeScanner.Swift {
+    header "BarcodeScanner-Swift.h"
+    requires objc
+}
