@@ -12,8 +12,8 @@
                 <param name="ios-package" value="BarcodeScannerNew" />
             </feature>
         </config-file>
-        <framework src="BarcodeScanner" type="podspec" spec="~> 1.0.0" />
-        <!-- <framework custom="true" src="src/ios/BarcodeScanner.framework" /> -->
+        <!-- <framework src="BarcodeScanner" type="podspec" spec="~> 1.0.0" /> -->
+        <framework custom="true" src="src/ios/BarcodeScanner.framework" />
         <source-file src="src/ios/BarcodeScannerNew.swift" />
     </platform>
     
