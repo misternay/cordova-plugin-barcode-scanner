@@ -28,3 +28,7 @@ Simple step to build framework
 2. If finnished build with xcode success.
 3. use ``Command: carthage build --platform iOS`` it will build checkout folder.
 4. copy .framework for use.
+
+## How to use this plugin
+
+1. ionic use ionic cordova plugin add "https://github.com/misternay/cordova-plugin-barcode-scanner.git"
