@@ -31,7 +31,7 @@ Simple step to build framework
 
 ## How to use this plugin
 
-1. ionic use ionic cordova plugin add "https://github.com/misternay/cordova-plugin-barcode-scanner.git"
+1. ionic use ```terminal: ionic cordova plugin add https://github.com/misternay/cordova-plugin-barcode-scanner.git ```
 2. ```typescript
         declare var barcodescannernew: any;
 
