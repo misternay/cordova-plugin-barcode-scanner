@@ -22,3 +22,9 @@ Simple step to build framework
 5. it will download and new folder.
 6. Go to Carthage/Build copy .framework
 
+## How to custom framework
+
+1. Go to Carthage/Checkout and open project with Xcode 
+2. If finnished build with xcode success.
+3. use ``Command: carthage build --platform iOS`` it will build checkout folder.
+4. copy .framework for use.
