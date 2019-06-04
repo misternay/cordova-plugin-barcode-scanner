@@ -44,3 +44,8 @@ Simple step to build framework
             })
         }
     ```
+    
+  ## Requirement
+  1. don't forget add request permission Cammera use in Xcode
+  2. change swift language to version 4 in build setting in xcode 
+  3. change file > workspace setting > build setting to 'legacy build system' and build system to legacy build
