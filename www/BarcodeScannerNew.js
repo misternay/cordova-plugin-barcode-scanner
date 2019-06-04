@@ -1,13 +1,43 @@
-var exec = require('cordova/exec');
+var exec = cordova.require("cordova/exec");
 
-exports.scan = function (arg0, success, error) {
-    exec(success, error, 'BarcodeScannerNew', 'scan', [arg0]);
-};
+/**
+ * Constructor.
+ *
+ * @returns {BarcodeScannerNew}
+ */
 
-exports.scanjs = function (arg0, success, error) {
-    if (arg0 && typeof (arg0) === 'string' && arg0.length > 0) {
-        success(arg0);
-    } else {
-        error('Empty message!');
+function BarcodeScannerNew() {}
+
+/**
+ *
+ * @param {Function} successCallback
+ * @param {Function} errorCallback
+ * @param config
+ */
+
+BarcodeScannerNew.prototype.scan = function (successCallback, errorCallback, config) {
+    config = [];
+
+    if (errorCallback == null) {
+        errorCallback = function () {};
     }
+
+    if (typeof errorCallback != "function") {
+        console.log("BarcodeScannerNew.scan failure: failure parameter not a function");
+        return;
+    }
+
+    if (typeof successCallback != "function") {
+        console.log("BarcodeScannerNew.scan failure: success callback parameter must be a function");
+        return;
+    }
+
+    exec(function (result) {
+        successCallback(result);
+    }, function (error) {
+        errorCallback(error);
+    }, 'BarcodeScannerNew', 'scan', config);
 };
+
+var barcodeScannerNew = new BarcodeScannerNew();
+module.exports = barcodeScannerNew;
