@@ -1,11 +1,50 @@
 {
-  "name": "barcodescannernew",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "cordova-barcode-scanner-swift",
+  "version": "1.0.1",
+  "description": "Use BarcodeScannerNew for performace scan QRCode or Barcode Scanner.",
+  "cordova": {
+    "id": "cordova-barcode-scanner-swift",
+    "platforms": [
+      "ios"
+    ]
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misternay/cordova-plugin-barcode-scanner.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova:plugin"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "<7.0.0": {
+        "cordova-android": "<6.3.0"
+      },
+      "7.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "7.1.0": {
+        "cordova-android": ">=6.3.0",
+        "cordova": ">=7.1.0"
+      },
+      "8.0.0": {
+        "cordova-android": ">=6.3.0",
+        "cordova": ">=7.1.0"
+      }
+    }
+  },
+  "author": "Misternay",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/misternay/cordova-plugin-barcode-scanner/issues"
+  },
+  "homepage": "https://github.com/misternay/cordova-plugin-barcode-scanner#readme",
+  "scripts": {
+    "test": ""
+  },
+  "devDependencies": {
+  }
 }
