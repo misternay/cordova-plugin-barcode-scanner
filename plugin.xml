@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<plugin id="cordova-barcode-scanner-swift" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-barcode-scanner-swift" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>BarcodeScannerNew</name>
-    
+    <description>Use BarcodeScannerNew for performace scan QRCode or Barcode Scanner</description>
+    <license>apache</license>
+    <repo>https://github.com/misternay/cordova-plugin-barcode-scanner</repo>
+     <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+    </engines>
     <js-module name="BarcodeScannerNew" src="www/BarcodeScannerNew.js">
         <clobbers target="barcodescannernew" />
     </js-module>
